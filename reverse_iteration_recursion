@@ -1,0 +1,13 @@
+void reversehelper(Node* node){
+if(node==NULL)
+return;
+if(node==tail)//just do nothing
+else{
+reversehelper(node->next);
+node->next->next=node;
+}
+}
+void reverse(Node *node){
+reversehelper(head);
+head->next=NULL;
+}
