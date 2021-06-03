@@ -1,0 +1,25 @@
+void reverseDrHelper(Node node,floor)
+{
+right=head;
+if(right==NULL)
+return;
+reverseDRhelper(right->next,floor+1);
+if(floor>=size/2)
+{
+int temp=left->data;
+left->data=right->data;
+right->data=temp;
+left->left->next;
+}
+
+}
+]
+
+
+
+
+Node left;
+void reverseDR(Node head){
+left=head;
+revereDrhelper(head,0);
+}
